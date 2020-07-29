@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Share+Tech+Mono&display=swap");
 
 /* GLOBAL STYLES */
-
 *,
 *::before,
 *::after {
@@ -22,6 +21,10 @@ html {
 a {
   text-decoration: none;
   color: rgb(3, 155, 155);
+}
+
+a:hover {
+  color: #e7e7e7;
 }
 
 ul {
@@ -687,4 +690,92 @@ footer a {
 
 .footer-coded-by {
   margin: 1rem 0;
+}
+
+/* Responsive Design */
+
+@media (max-width: 750px) {
+  .main-message h3 {
+    font-size: 3rem;
+  }
+
+  .about .container {
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+
+  .title-heading {
+    margin: 0;
+  }
+
+  .experience-areas {
+    gap: 0;
+  }
+
+  .experience-item {
+    padding: 0;
+    height: 32rem;
+  }
+
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    box-shadow: 0 20px 30px 0 rgba(212, 255, 255, 0.15);
+  }
+
+  .project-img {
+    width: 24rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .main-message {
+    top: 55%;
+  }
+
+  .main-message h2 {
+    letter-spacing: 1rem;
+    font-size: 1.5rem;
+    width: 27ch;
+  }
+
+  .main-message h3 {
+    font-size: 2rem;
+  }
+
+  .main-message p {
+    font-size: 1.3rem;
+  }
+
+  .btn {
+    border-radius: 0.9rem;
+    padding: 0.9rem 0.9rem;
+  }
+
+  .about-text-box h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  .about-text-box p {
+    margin: 0 0 2.45rem;
+  }
+
+  .title-heading h2 {
+    margin-bottom: 2rem;
+  }
+
+  .title-heading p {
+    font-size: 1.3rem;
+  }
+
+  footer,
+  footer p {
+    font-size: 1.3rem;
+  }
+  }
 }
