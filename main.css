@@ -799,6 +799,15 @@ footer a {
     font-size: 1.3rem;
   }
 
+  .experience-item {
+    height: 36rem;
+  }
+
+  .data-man { /* subclass of .experience-item */
+    margin-top: 4rem;
+    height: 32rem;
+  }
+
   footer,
   footer p {
     font-size: 1.3rem;
