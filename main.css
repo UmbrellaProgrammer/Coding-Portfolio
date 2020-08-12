@@ -532,7 +532,8 @@ hr {
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  text-align: center;
+  margin: 0px auto;
 }
 
 /* Hide the images by default */
@@ -557,13 +558,19 @@ hr {
   user-select: none;
 }
 
+/* Position the "prev button" to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background color with transparency to next buttons */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
@@ -687,7 +694,6 @@ hr {
   -webkit-text-fill-color: transparent;
 }
 
-
 .contact-image {
   max-width: 65%;
   display: block;
@@ -803,14 +809,18 @@ footer a {
     height: 36rem;
   }
 
-  .data-man { /* subclass of .experience-item */
+  .data-man {
+    /* subclass of .experience-item */
     margin-top: 4rem;
     height: 32rem;
+  }
+
+  .contact .container a {
+    font-size: 1.4rem;
   }
 
   footer,
   footer p {
     font-size: 1.3rem;
-  }
   }
 }
